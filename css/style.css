@@ -3,3 +3,200 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#cabecalho{
+    background-color: rgb(172, 215, 252);
+    padding: 10px;
+
+    /*Estruturando o layout com Grid*/
+    display: grid;
+    
+    
+    grid-template-columns: 1fr 4fr;
+    
+    gap: 0px/*linha*/ 100px/*Coluna*/;
+}
+
+#logo{
+    background-color: aliceblue;
+    height: 100px;
+}
+
+#menu_principal{
+    background-color: antiquewhite;
+    height: 100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+                /*Alig  Justify*/
+    place-items: center end;
+}
+
+#itens_menu{
+    background-color: burlywood;
+    height: 40px;
+    width: 60%;
+
+}
+
+#quem_sou{
+    background-color: aliceblue;
+    padding: 10px;
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap:0px 10px;
+}
+
+#informacoes_texto{
+    background-color:rgb(160, 221, 136);
+    padding: 10px;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    
+    gap: 10px 0px;
+}
+#titulo_info{
+    background-color: rgb(28, 212, 151);
+    
+
+}
+#botao_info{
+    background-color: rgb(47, 145, 145);
+    
+
+}
+#redes_sociais_info{
+    background-color: chartreuse;
+    display: grid;
+  
+    grid-template-columns: 1fr;
+    
+    place-items: center center;
+}
+#redes_sociais{
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: 50px 50px 50px;
+    
+}
+.redes_sociais{
+    background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+}
+
+#foto{
+    background-color: aquamarine;
+    
+}
+
+#mais_sobre{
+    background-color: aliceblue;
+    height: 500px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 4fr;
+}
+
+#mais_sobre_conteudo{
+    grid-template-columns: 1fr 2fr;
+}
+#foto_mais_sobre,#mais_sobre_texto{
+    background-color: cadetblue;
+}
+#abilidades{
+    background-color: aliceblue;
+    height: 500px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 4fr;
+}
+
+#abilidades_cabecalho,#cabecalho_mais_sobre,#trabalhos_cabecalho{
+    background-color: rgb(190, 225, 255);
+    display: grid;
+
+    grid-template-columns: 1fr;
+    place-items: end center;
+}
+.subtitulo{
+    background-color: antiquewhite;
+    height: 60px;
+    width: 100px;
+}
+
+.conteudo{
+    background-color: rgb(108, 186, 255);
+    padding: 10px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0px 10px;
+}
+#abilidades_descricao{
+    background-color: aqua;
+    padding: 10px;
+    display: grid;
+
+    grid-template-rows: 1fr 2fr;
+    gap: 10px 0px;
+}
+.abilidades_conteudo{
+    background-color: cadetblue;
+}
+#abilidades_fotos{
+    background-color: rgb(0, 155, 155);
+    
+}
+
+#trabalhos_conteudo{
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    
+}
+.trabalhos_fotos{
+    background-color: blueviolet;
+    height: 200px;
+    height: 200px;
+}
+
+#rodape{
+    background-color: antiquewhite;
+    height: 200px;
+    padding: 10px;
+    
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    place-items: center center;
+}
+
+#titulo_rodape{
+    background-color: rgb(126, 122, 118);
+    height: 50px;
+    width: 100px;
+}
+
+#texto_rodape{
+    background-color: rgb(126, 122, 118);
+    height: 20px;
+    width: 200px;
+}
+
