@@ -130,6 +130,9 @@
     grid-template-columns: 1fr;
     place-items: end center;
 }
+#trabalhos_cabecalho{
+    height: 100px;
+}
 .subtitulo{
     background-color: antiquewhite;
     height: 60px;
@@ -165,7 +168,7 @@
 #trabalhos_conteudo{
 
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
     gap: 10px 10px;
     
 }
