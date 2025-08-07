@@ -110,7 +110,9 @@
     grid-template-columns: 1fr 2fr;
 }
 #foto_mais_sobre,#mais_sobre_texto{
+    padding: 10px;
     background-color: cadetblue;
+    align-content: center;
 }
 #abilidades{
     background-color: aliceblue;
@@ -134,9 +136,12 @@
     height: 100px;
 }
 .subtitulo{
-    background-color: antiquewhite;
+    
+    padding: 10px;
     height: 60px;
-    width: 100px;
+    width: 150px;
+    align-content: center;
+    justify-content: center;
 }
 
 .conteudo{
@@ -159,6 +164,19 @@
 }
 .abilidades_conteudo{
     background-color: cadetblue;
+}
+#abilidades_detalhadas{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    gap: 10px 0px;
+}
+.skills{
+    background-color: cornflowerblue;
+    
 }
 #abilidades_fotos{
     background-color: rgb(0, 155, 155);
@@ -192,9 +210,9 @@
 }
 
 #titulo_rodape{
-    background-color: rgb(126, 122, 118);
+    
     height: 50px;
-    width: 100px;
+    width: 150px;
 }
 
 #texto_rodape{
