@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+:root{
+    /*Cor*/
+    --cor_primaria: #31565C;
+    /*Fonte*/
+    --logo_fonte:"Anta", sans-serif;
+    /*Tamanho*/
+    --fonte_tamho_logo : 1.5em;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +16,7 @@
 }
 
 #cabecalho{
-    background-color: rgb(172, 215, 252);
+   
     padding: 10px;
 
     /*Estruturando o layout com Grid*/
@@ -18,13 +29,49 @@
 }
 
 #logo{
-    background-color: aliceblue;
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    
     height: 100px;
 }
 
+#logo p{
+
+              /*Fonte  Familia    Tipo 
+    font-family:'Anta',sans-serif;*/
+    font-family: var(--logo_fonte);
+    font-weight: 600;
+    font-style: normal;
+    font-size: var(--fonte_tamho_logo); /*rem(Raiz) ou em(Pai)*/
+
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+
+    text-align: justify;
+
+    text-transform: uppercase;
+    text-decoration:none;
+
+                /* Eixo x Eixo y esfumaçado cor/opacidade
+    text-shadow: 5px 5px 10px rgba(0, 0, 0,.5);
+    
+            /*R G B
+    color: #000000;
+
+    color: rgba(0,0,0,.5);*/
+
+    color: var(--cor_primaria);
+    
+}
+
 #menu_principal{
-    background-color: antiquewhite;
+    
     height: 100px;
+    padding: 0px 10px;
 
     display: grid;
 
@@ -33,12 +80,21 @@
     place-items: center end;
 }
 
-#itens_menu{
-    background-color: burlywood;
-    height: 40px;
-    width: 60%;
+#itens_menu ul{
+
+    padding: 10px;
+    list-style: none;
+
+
+    display: flex;
+
+    gap: 20px;
+    flex-wrap: wrap;
+
+    justify-content: end;
 
 }
+
 
 #quem_sou{
     background-color: aliceblue;
