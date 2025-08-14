@@ -38,14 +38,7 @@
     gap: 0px/*linha*/ 100px/*Coluna*/;
 
 }
-#logo_backgroud{
-    width: 100px;
-    position: absolute;
-    opacity: 0.5;
-    top: 30px;
-    left: 10px;
-    object-fit: cover;
-}
+
 #logo{
     
     display: flex;
@@ -131,7 +124,18 @@
 }
 
 #quem_sou{
+    transition: 1s;
+
     background-color: aliceblue;
+    /*
+    background-image: url('../assets/img/pessoa_braco_aberto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+    background: radial-gradient(var(--cor_cabecalho),var(--cor_primaria));
+    background-attachment: fixed;
+
     padding: 10px;
     
     display: grid;
@@ -139,11 +143,14 @@
     grid-template-columns: 1fr 1fr;
     gap:0px 10px;
 }
+#quem_sou:hover{
+    background: radial-gradient(var(--cor_primaria),var(--cor_cabecalho));
+}
 
 #informacoes_texto{
-    background-color:rgb(160, 221, 136);
+   /* background-color:rgb(160, 221, 136);*/
     padding: 10px;
-    display: none;
+    display: grid;
 
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr 1fr;
@@ -161,7 +168,7 @@
 
 }
 #redes_sociais_info{
-    background-color: chartreuse;
+    
     display: grid;
   
     grid-template-columns: 1fr;
@@ -175,12 +182,13 @@
     
 }
 .redes_sociais{
-    background-color: blueviolet;
+    
     height: 50px;
     width: 50px;
 }
 
 #foto{
+    display: grid;
     background-color: aquamarine;
     
 }
