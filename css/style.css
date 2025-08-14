@@ -38,7 +38,14 @@
     gap: 0px/*linha*/ 100px/*Coluna*/;
 
 }
-
+#logo_backgroud{
+    width: 100px;
+    position: absolute;
+    opacity: 0.5;
+    top: 30px;
+    left: 10px;
+    object-fit: cover;
+}
 #logo{
     
     display: flex;
