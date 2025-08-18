@@ -260,8 +260,6 @@
 
 #mais_sobre{
     
-    height: 500px;
-
     display: grid;
 
     grid-template-columns: 1fr;
@@ -272,10 +270,13 @@
 #mais_sobre_conteudo{
     grid-template-columns: 1fr 2fr;
 }
-#foto_mais_sobre,#mais_sobre_texto{
+#foto_mais_sobre,#mais_sobre_texto {
     padding: 10px;
     
     align-content: center;
+}
+#foto_mais_sobre figure img{
+    border-radius: 10px;
 }
 #abilidades{
     
@@ -419,5 +420,13 @@
 
     }
 
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    #mais_sobre_conteudo{
+        grid-template-columns: 1fr;
+
+        place-items: center center;
+    }
 
 }
