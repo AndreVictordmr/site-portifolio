@@ -4,6 +4,7 @@
 :root{
     /*Cor*/
     --cor_primaria: #5f5f5f;
+    --cor_rodape : #b4b4b4;
     --cor_cabecalho: #E6E6E6;
     /*Fonte*/
     --logo_fonte:"Anta", sans-serif;
@@ -81,7 +82,7 @@
 
 #menu_principal{
     
-    height: 100px;
+    
     padding: 0px 10px;
 
     font-family: var(--fonte_menu);
@@ -265,7 +266,9 @@
 }
 
 #abilidades_cabecalho,#cabecalho_mais_sobre,#trabalhos_cabecalho{
-    background-color: rgb(190, 225, 255);
+    background-color:var(--cor_cabecalho);
+    border-top: 2px solid var(--cor_primaria);
+    border-bottom: 2px solid var(--cor_primaria);
     display: grid;
 
     grid-template-columns: 1fr;
@@ -274,13 +277,13 @@
 #trabalhos_cabecalho{
     height: 100px;
 }
-.subtitulo{
-    
+
+.subtitulo h2{
+    font-family: var(--logo_fonte);    
+    color: var(--cor_primaria);  
     padding: 10px;
-    height: 60px;
-    width: 150px;
     align-content: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .conteudo{
@@ -336,7 +339,8 @@
 }
 
 #rodape{
-    background-color: antiquewhite;
+    background-color: var(--cor_rodape);
+    border-top: 2px solid var(--cor_primaria);
     height: 200px;
     padding: 10px;
     
@@ -345,18 +349,41 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 1fr;
 
+    gap: 20px;
+
     place-items: center center;
 }
 
-#titulo_rodape{
+#titulo_rodape h2{
+    color: var(--cor_primaria);
+    font-family: var(--logo_fonte);
+    font-size: var(--fonte_tamho_logo);
+}
+
+#texto_rodape p{
+    font-family: var(--fonte_menu);
+}
+
+/* Adapataçao para Moblie*/
+@media(max-width: 800px){
+
+    #cabecalho{
+        grid-template-columns: 1fr;
+    }
+    #menu_principal{
+        place-items: center center;
+    }
+    #itens_menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #quem_sou{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
     
-    height: 50px;
-    width: 150px;
-}
+    #foto{
+        display: none;
+    }
 
-#texto_rodape{
-    background-color: rgb(126, 122, 118);
-    height: 20px;
-    width: 250px;
 }
-
