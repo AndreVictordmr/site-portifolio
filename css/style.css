@@ -263,14 +263,14 @@
 }
 
 #foto{
-    
     display: grid;
-    justify-content: center;
+
+    place-items: center center;
 }
 
 #foto figure img{
     border-radius: 20px;
-    width: 100%;
+    width: 70%;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
