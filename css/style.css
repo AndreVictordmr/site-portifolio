@@ -80,7 +80,7 @@
     
 }
 
-#menu_principal{
+#menu_principal.desktop{
     
     
     padding: 0px 10px;
@@ -95,6 +95,22 @@
                 /*Alig  Justify*/
     place-items: center end;
 }
+#menu_principal.moblie{
+    
+    
+    padding: 0px 10px;
+
+    font-family: var(--fonte_menu);
+    font-weight: 400;
+    font-style: normal;
+
+    display: none;
+
+    grid-template-columns: 1fr;
+                /*Alig  Justify*/
+    place-items: center end;
+}
+
 
 #itens_menu ul{
 
@@ -275,12 +291,19 @@
     
     align-content: center;
 }
+#mais_sobre_texto h3{
+    font-family: var(--logo_fonte);
+}
+#mais_sobre_texto p{
+    font-family: var(--fonte_menu);
+}
 #foto_mais_sobre figure img{
     border-radius: 10px;
+    
 }
 #abilidades{
     
-    height: 500px;
+    
 
     display: grid;
 
@@ -298,9 +321,7 @@
     grid-template-columns: 1fr;
     place-items: end center;
 }
-#trabalhos_cabecalho{
-    height: 100px;
-}
+
 
 .subtitulo h2{
     font-family: var(--logo_fonte);    
@@ -331,16 +352,20 @@
     gap: 0px 10px;
 }
 #abilidades_descricao{
-    background-color: aqua;
+    
     padding: 10px;
     display: grid;
 
     grid-template-rows: 1fr 2fr;
     gap: 10px 0px;
 }
-.abilidades_conteudo{
-    background-color: cadetblue;
+.abilidades_conteudo p{
+    font-family: var(--fonte_menu);
 }
+.abilidades_conteudo h3{
+    font-family: var(--logo_fonte);
+}
+
 #abilidades_detalhadas{
     display: grid;
     padding: 10px;
@@ -351,11 +376,29 @@
     gap: 10px 0px;
 }
 .skills{
-    background-color: cornflowerblue;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start start;
+
+    border: 1px solid var(--cor_cabecalho);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+.skills p{
+    justify-self: end;
+    font-family: var(--fonte_menu);
+}
+
+.skills h3{
+    font-family: var(--logo_fonte);
 }
 #abilidades_fotos{
-    background-color: rgb(0, 155, 155);
+    display: grid;
+    place-items: center center;
+}
+#abilidades_fotos figure img{
+    width: 100%;
+    border-radius: 20px;
     
 }
 
@@ -399,10 +442,10 @@
 }
 
 /* Adapataçao para Moblie*/
-@media(max-width: 800px){
+@media(max-width: 850px){
 
     #cabecalho{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     #menu_principal{
         place-items: center center;
@@ -411,7 +454,7 @@
         flex-direction: column;
         align-items: center;
     }
-
+    
     #quem_sou.desktop{
         display: none;
     }
@@ -419,7 +462,26 @@
         display: grid;
 
     }
+    #menu_principal.desktop{
+        display: none;  
+    }
+    #menu_principal.moblie{
+        display: grid;
+    }
+    #menu_hamburguer{
+        display: grid;
 
+        grid-template-columns: 1fr;
+        place-items: center center;
+
+    }
+    #menu_hamburguer ul{
+        list-style: none;
+        font-family: var(--fonte_menu);
+    }
+    #menu_hamburguer ul li{
+        font-family: var(--fonte_menu);
+    }
     .conteudo{
         grid-template-columns: 1fr;
     }
