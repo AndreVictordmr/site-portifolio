@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Inicio</title>
     </head>
-    <body>
+    <body id="#home">
         <header id="cabecalho">
             <div id="logo">
                 <p>André Victor </p>
@@ -18,11 +18,11 @@
 
                 <div id="itens_menu">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Sobre</li>
-                        <li>Curriculo</li>
-                        <li>Projeto</li>
-                        <li>Contato</li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#mais_sobre">Sobre</a></li>
+                        <li><a href="#abilidades">Abilidades</a></li>
+                        <li><a href="#trabalhos">Uma Visao mais profunda</a></li>
+                        <li><a href="">Contato</a></li>
                     </ul>
                 </div>
 
@@ -41,11 +41,11 @@
                 </div>
                 <div id="menu_hamburguer">
                     <ul>
-                        <li>Inicio</li>
-                        <li>Sobre</li>
-                        <li>Curriculo</li>
-                        <li>Projeto</li>
-                        <li>Contato</li>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#mais_sobre">Sobre</a></li>
+                        <li><a href="#abilidades">Abilidades</a></li>
+                        <li><a href="#trabalhos">Uma Visao mais profunda</a></li>
+                        <li><a href="">Contato</a></li>
                     </ul>
                 </div>
                 </div>
@@ -53,11 +53,11 @@
 
         </header>
 
-        <section id="quem_sou" class="desktop">
+        <section id="quem_sou" class="desktop moblie">
             
             <div id="informacoes_texto">
                 <div id="titulo_info">
-                    <h1>Olá,<br> Eu sou André Victor<br>Desenvolvedor Fullstack</h1>
+                    <h1>Bem Vindo,<br> Eu sou André Victor<br>Desenvolvedor Fullstack</h1>
                 </div>
                 <div id="botao_info">
                     <button>Contato</button>
@@ -101,57 +101,10 @@
 
         </section>
 
-        <section id="quem_sou" class="moblie">
-            
-            <div id="informacoes_texto">
-                <div id="titulo_info">
-                    <h1>Olá,<br> Eu sou André Victor<br>Desenvolvedor Fullstack</h1>
-                </div>
-                <div id="botao_info">
-                    <button>Contato</button>
-                </div>
-                <div id="redes_sociais_info">
-                    <section id="redes_sociais">
-                        <div id="insta_info" class="redes_sociais">
-                            <figure>
-                                <img src="assets/img/instagram.png" alt="instagram">
-                            </figure>
-                        </div>
-                        <div id="linkedin_info" class="redes_sociais">
-                            <figure>
-                                <img src="assets/img/linkedin.png" alt="linkedin">
-                            </figure>
-                        </div>
-                        <div id="facebook_info" class="redes_sociais" >
-                            <figure>
-                                <img src="assets/img/github.png" alt="github" width="50px">
-                            </figure>
-                        </div>
-                    </section>
-                </div>
-            </div>
-            <div id="foto">
-                <figure>
-                    <img src="assets/img/andre_pixel.png" alt="Andre">
-                    <figcaption hidden>Um belo cenario</figcaption>
-                </figure>
-
-
-            <!-- 
-                <audio controls>
-                    <source src="assets/sound/shadow-wizard-money-gang.mp3" type="audio/mp3">
-                    <source src="assets/sound/shadow-wizard-money-gang.mp3" type="audio/ogg">
-                    Seu navegador não possui renderizador audio
-                </audio>
-                <video src="assets/vid/onda.mp4" controls width="500px"></video>
-            -->
-            </div>
-
-        </section>
 
         <section id="mais_sobre">
             <header id="cabecalho_mais_sobre">
-                <div class="subtitulo"><h2>Sobre min</h2></div>
+                <div class="subtitulo"><h2>Quem Sou</h2></div>
             </header>
             <section class="conteudo" id="mais_sobre_conteudo">
                 <div id="foto_mais_sobre">
@@ -159,9 +112,16 @@
                         <img src="assets/img/joinha.png"  alt="foto do andre">
                     </figure>
                 </div>
-                <div id="mais_sobre_texto">
+                <div class="mais_sobre_texto">
                     <h3>Um pouco sobre min</h3>
-                    <p>Confia que eu faço tudo certo</p>
+                    <p>Sou André Victor, formado pela Fatec em Jogos Digitais e atualmente cursando o programa profissionalizante de Desenvolvedor Full-Stack no Senac Penha.<br> Sou apaixonado por aprender coisas novas, especialmente quando têm alguma conexão com meus hobbies, jogos, mangás e temas relacionados.</p>
+                    <h3>Porque Full-Stack</h3>
+                    <p>Mesmo que por devido meus gostos me vejo interagindo mais com back-end, logica e um pouco de Front-end, por isso vejo curso de Fullstack como uma tentativa para uma abertura melhor para o mercado de trabalho, tambem tento me motivar apos um tempo sem mexer em assuntos da area.</p>
+                    <h4>Meus pensamentos sobre o Full-Stack</h4>
+                    <p>Inicialmente, eu tinha a impressão de que a área era muito mais complexa por causa da quantidade de linguagens e frameworks que as pessoas diziam ser necessários para começar. Isso dava a sensação de que tudo era mais complicado do que realmente é</p>
+                    <h3>Desafios, evoluçoes e mudanças</h3>
+                    <p>Não sinto que tive muitas mudanças ou desafios desde que comecei o curso, mas por já ter passado por bastante coisa no curso de Jogos, percebo que estou vivendo mais uma mudança de visão, uma adaptação a algo novo, porém não totalmente estranho. Posso dizer que melhorei um pouco na parte de comunicação; sinto que agora consigo expressar melhor minhas ideias e o ponto que quero abordar</p>
+                    
                 </div>
             </section>    
         </section>
@@ -176,26 +136,28 @@
             <section class="conteudo">
                 <div id="abilidades_descricao">
                     <div class="abilidades_conteudo" id="abilidades_texto">
-                        <h3>Abilidades Especificas</h3>
+                        <h3>Abilidades aprendidas</h3>
                         <br>
-                        <p>Aqui estao algumas abilidades em que eu possuo como um Desenvolvedor Full-Stack:</p>
+                        <p>Aqui estao algumas abilidades que aprendi ao longo do curso de Desenvolvedor Full-Stack:</p>
                     </div>
                     <div class="abilidades_conteudo" id="abilidades_detalhadas">
                         <div class="skills">
-                            <h3>HTML</h3>
-                            <p>80%</p>
+                            <h3>Iniciar um projeto visando o cliente</h3>
                         </div>
                         <div class="skills">
-                            <h3>CSS</h3>
-                            <p>50%</p>
+                            <h3>Criação, Estiliçao e programaçao de um site</h3>
                         </div>
                         <div class="skills">
-                            <h3>JavaScript</h3>
-                            <p>70%</p>
+                            <h3>Criar e utilizar Web Service</h3>
                         </div>
                         <div class="skills">
                             <h3>PHP</h3>
-                            <p>0%</p>
+                        </div>
+                        <div class="skills">
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="skills">
+                            <h3>Cria e mexer com dominios e hospedagens</h3>
                         </div>
                     </div>
                 </div>
@@ -210,18 +172,14 @@
         <section id="trabalhos">
             <header id="trabalhos_cabecalho">
                 <div class="subtitulo">
-                    <h2>Trabalhos</h2>
+                    <h2>Trabalho e proximos passos</h2>
                 </div>
             </header>
-            <section class="conteudo" id="trabalhos_conteudo">
-                
-                <div class="trabalhos_fotos"></div>
-                <div class="trabalhos_fotos"></div>
-                <div class="trabalhos_fotos"></div>
-                <div class="trabalhos_fotos"></div>
-                <div class="trabalhos_fotos"></div>
-                <div class="trabalhos_fotos"></div>
-                
+            <section class="mais_sobre_texto" id="trabalhos_conteudo">
+                <h3>Minha preparaçao para o mercado</h3>
+                <p>Me vejo capaz de encarar desafios, sinto que posso fazer muito bem o que já sei, mas também percebo que preciso aprender mais sobre frameworks e me aprofundar em alguma grande linguagem do mercado, como Python, Java ou C#.<br>Em relação ao trabalho em equipe, apesar de preferir trabalhar sozinho, não tenho dificuldade em me adaptar a um grupo e realizar as tarefas que me forem atribuídas.</p>
+                <h3>Caminhos Futuros</h3>
+                <p>Mesmo tendo feito o curso de Full-Stack para ampliar minhas possibilidades no mercado, ainda vejo oportunidades para mim na área de jogos. Em uma visão de curto prazo, devo melhorar meu inglês e tentar uma vaga na empresa onde minha irmã trabalha atualmente. Enquanto isso não acontece, vou trabalhar com ela no site dela e também em possíveis projetos pessoais meus, ao mesmo tempo em que busco melhorar minha comunicação e organização. Mesmo que essas habilidades já sejam boas, reconheço que são áreas nas quais ainda posso evoluir.</p>
                 
             </section>
         </section>

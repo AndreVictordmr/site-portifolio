@@ -131,6 +131,12 @@
     padding: 10px;
 
 }
+#itens_menu li a,#menu_hamburguer li a{
+  
+    text-decoration: none;
+    color: var(--cor_primaria);
+
+}
 
 #itens_menu li:hover{
     background-color: var(--cor_primaria);
@@ -286,16 +292,22 @@
 #mais_sobre_conteudo{
     grid-template-columns: 1fr 2fr;
 }
-#foto_mais_sobre,#mais_sobre_texto {
+#foto_mais_sobre,.mais_sobre_texto {
     padding: 10px;
     
     align-content: center;
 }
-#mais_sobre_texto h3{
+.mais_sobre_texto h3,.mais_sobre_texto h4{
+    margin-top: 10px;
     font-family: var(--logo_fonte);
 }
-#mais_sobre_texto p{
+.mais_sobre_texto p{
     font-family: var(--fonte_menu);
+}#foto_mais_sobre figure {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
 }
 #foto_mais_sobre figure img{
     border-radius: 10px;
@@ -317,7 +329,7 @@
     border-top: 2px solid var(--cor_primaria);
     border-bottom: 2px solid var(--cor_primaria);
     display: grid;
-
+    
     grid-template-columns: 1fr;
     place-items: end center;
 }
@@ -331,7 +343,7 @@
     justify-content: center;    
 }
 
-.conteudo{
+.conteudo,#trabalhos_conteudo{
     background-color: aliceblue;
     
     background-image: url('../assets/img/hexagon-pattern_640.jpg');
@@ -345,9 +357,7 @@
 
     padding: 10px;
 
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
+    
 
     gap: 0px 10px;
 }
@@ -377,8 +387,8 @@
 }
 .skills{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: start start;
+    grid-template-columns: 1fr;
+    place-items: center;
 
     border: 1px solid var(--cor_cabecalho);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
@@ -446,9 +456,15 @@
 
     #cabecalho{
         grid-template-columns: 1fr 1fr;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        
     }
     #menu_principal{
         place-items: center center;
+        
     }
     #itens_menu ul{
         flex-direction: column;
@@ -459,6 +475,7 @@
         display: none;
     }
     #quem_sou.moblie{
+
         display: grid;
 
     }
@@ -467,6 +484,7 @@
     }
     #menu_principal.moblie{
         display: grid;
+        
     }
     #menu_hamburguer{
         display: grid;
